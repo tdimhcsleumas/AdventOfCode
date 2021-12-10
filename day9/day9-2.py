@@ -1,12 +1,3 @@
-from dataclasses import dataclass
-
-@dataclass
-class QueueEntry:
-  row: int
-  col: int
-  basin: set
-
-
 if __name__ == "__main__":
   filename = "input.txt" 
   with open(filename) as f:
@@ -55,9 +46,3 @@ if __name__ == "__main__":
 
     sortedBasins = sorted(basins, key=lambda x: -1 * len(x))
     print(len(sortedBasins[0]) * len(sortedBasins[1]) * len(sortedBasins[2]))
-
-        
-
-
-
- 
